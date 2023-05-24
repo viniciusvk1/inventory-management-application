@@ -34,6 +34,7 @@ public class CategoryController {
         return ResponseEntity.ok(categoryRepository.findAllByNameContainingIgnoreCare(name));
     }
 
+
     // findById method -> able to search for a category by id that already exists in the system.
     // mapped by: /category/{id} | <- in the url {id} you should pass the id of the category you want to find
     // Tested status: Working

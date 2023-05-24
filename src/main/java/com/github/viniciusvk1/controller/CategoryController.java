@@ -28,12 +28,11 @@ public class CategoryController {
 
     // findAllByName method -> able to search for a category by name that already exists in the system.
     // mapped by: /category/{name} | <- in the url {name} you should pass the name of the category you want to find
-    // Tested status: Not Working
+    // Tested status: Working
     @GetMapping("/{name}")
     public ResponseEntity<List<Category>> findAllByName(@Valid @PathVariable String name) {
-        return ResponseEntity.ok(categoryRepository.findAllByNameContainingIgnoreCare(name));
+        return ResponseEntity.ok(categoryRepository.findAllByNameContainingIgnoreCase(name));
     }
-
 
     // findById method -> able to search for a category by id that already exists in the system.
     // mapped by: /category/{id} | <- in the url {id} you should pass the id of the category you want to find

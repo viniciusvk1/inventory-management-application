@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    public List<Category> findAllByNameContainingIgnoreCare(@Param("name") String name);
+    public List<Category> findAllByNameContainingIgnoreCase(@Param("name") String name);
 
 }

@@ -4,7 +4,6 @@ import com.github.viniciusvk1.model.Category;
 import com.github.viniciusvk1.repository.CategoryRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
